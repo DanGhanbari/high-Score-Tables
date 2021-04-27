@@ -1,12 +1,17 @@
 const TableBody = (props) => {
+  let descendingOrder = props.elem.scores.sort((a, b) => {
+    return b.s - a.s;
+  });
   return (
     <tbody>
-      {props.elem.scores.map((score, index) => (
-        <tr className="border_bottom" key={index}>
-          <td>{score.n}</td>
-          <td>{score.s}</td>
-        </tr>
-      ))}
+      {descendingOrder.map((score, index) => {
+        return (
+          <tr className="border_bottom" key={index}>
+            <td>{score.n}</td>
+            <td>{score.s}</td>
+          </tr>
+        );
+      })}
     </tbody>
   );
 };

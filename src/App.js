@@ -1,3 +1,4 @@
+// import React, { useState } from "react";
 import "./App.css";
 import scores from "./scores";
 import Countries from "./Countries";
