@@ -12,3 +12,11 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+hr {
+  background-color: rgb(255, 255, 255);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  /* border: 0; */
+  /* border-top: 2px solid rgba(255, 255, 255, 0.931); */
+}

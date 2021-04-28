@@ -1,6 +1,6 @@
 import TableBody from "./TableBody";
-
 const Countries = (props) => {
+  let sortScores = props.sort;
   return (
     <div>
       {props.countries.map((country, countryIndex) => (
@@ -15,7 +15,7 @@ const Countries = (props) => {
               </th>
             </tr>
           </thead>
-          <TableBody elem={country} />
+          <TableBody elem={country} sort={sortScores} />
         </table>
       ))}
     </div>
